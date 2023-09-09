@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+
+# TypeScript
+dist/
+*.js
+*.js.map
+
+# Environment variables
+.env
+
+# MongoDB backup files
+dump/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-*
+*.suo
+*.ntvs*
+
+# Logs
+*.log
+
+# Dependency directories
+.npm/
+
+# macOS
+.DS_Store
