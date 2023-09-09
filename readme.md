@@ -7,10 +7,11 @@ This is a RESTful API for managing Todo items.
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Docker](#docker)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
+
 
 ## Getting Started
 
@@ -44,6 +45,17 @@ Before running the project, make sure you have the followin software installed
 
 The server should now be running on [http://localhost:3000/](http://localhost:3000/)
 
+### Docker
+
+1. Build Docker Image  
+  `docker build -t  todoapp:latest .`    
+2. Run Docker Container  
+  Once the image is built, create and run a Docker container from the image using the following command:  
+  `docker run -d -p 3000:3000  todoapp`
+3. Access your Application  
+  With the Docker container running, you can access your application by opening a web browser and navigating  
+  [http://localhost:3000/](http://localhost:3000/)
+
 ## Usage
 
 - Use a tool like Postman to interact with the API endpoints
@@ -59,4 +71,6 @@ The API is documented using Swagger. You can access the SwaggerUI for interactiv
 
 You can configure the application by modifying the `.env` file. This file includes environment-specific settings such as database connection details.
 
-Make a variable named `MONGOURL` and set you monogodb connection url with a valid username and password.
+```env
+  MONGOURL=<mongo_connection_url_with_valid_username_and_password>
+```
