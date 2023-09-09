@@ -26,7 +26,7 @@ Before running the project, make sure you have the followin software installed
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/
+   git clone https://github.com/tushark15/todoapp-api.git
    ```
 
 2. Navigate to the project directory  
