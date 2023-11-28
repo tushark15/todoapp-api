@@ -22,8 +22,10 @@ const router = Router();
  *             properties:
  *               title:
  *                 type: string
+ *                 default: New Todo
  *               completed:
  *                 type: boolean
+ *                 default: false
  *     responses:
  *       200:
  *         description: Successfully created a new Todo item.

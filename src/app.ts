@@ -6,7 +6,7 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from './swaggerConfig';
 
 const app: Application = express();
-const PORT: number = 3000;
+const PORT: number = 4000;
 
 mongoose.connect(`${process.env.MONGOURL}`, {
   useNewUrlParser: true,
